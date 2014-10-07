@@ -1,10 +1,11 @@
+import java.awt.Color;
 import javax.swing.JFrame;
 
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author @hhaldimann
+ * @version 1 October 2014
  */
 public class CityscapeViewer
 {
@@ -17,7 +18,7 @@ public class CityscapeViewer
         // create and configure the frame (window) for the program
         JFrame frame = new JFrame();
         
-        frame.setSize(800 /* x */, 600 /* y */);
+        frame.setSize(800, 600);
         frame.setTitle("Cityscape");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
@@ -25,6 +26,10 @@ public class CityscapeViewer
         CityscapeComponent component = new CityscapeComponent();
         frame.add(component);
         
+        Color myColor = Color.BLUE;
+        
+        frame.getContentPane().setBackground(myColor);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // make the frame visible which will result in the paintComponent method being invoked on the
         //  component.
         frame.setVisible(true);

@@ -12,23 +12,28 @@ import javax.swing.JComponent;
 public class CityscapeComponent extends JComponent
 {
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
+     * This method instantiates the objects and creates multiple buildings, a road and a sun. It then draws the objects.
      * @param    y    description of parameter y
-     * @return    description of the return value
      */
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
+        Road mainRoad = new Road(0, 0);
+        Building building1 = new Building(0, 0);
+        Building building2 = new Building(150, 0);
+        Building building3 = new Building(300, 0);
+        Building building4 = new Building(450, 0);
+        Sun sun = new Sun(0,0);
+        Tree tree = new Tree(0,0);
         
-        // create instances of classes and invoke the draw method on each
-        // ...
+        building1.draw(g2);
+        building2.draw(g2);
+        building3.draw(g2);
+        building4.draw(g2);
         
+        mainRoad.draw(g2);
+        sun.draw(g2);
+        tree.draw(g2);
         
     }
 
