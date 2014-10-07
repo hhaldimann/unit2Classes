@@ -15,6 +15,8 @@ public class Sun
     private int yTop;
     /**
      * Default constructor for objects of class Sun
+     * @param x Placement of the sun from x axis to the left
+     * @param y Placement of the sun from y axis down
      */
     public Sun(int x, int y)
     {
@@ -23,7 +25,7 @@ public class Sun
     }
     /**
      * This method uses the Graphics2D g2 class to create and draw a sun.
-     * @param    y    description of parameter y
+     * @param    g2   uses g2 class to create and draw a sun.
      * @return    void
      */
     public void draw(Graphics2D g2)

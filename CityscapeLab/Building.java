@@ -15,6 +15,8 @@ public class Building
     private int yTop;
     /**
      * Default constructor for objects of class Building
+     *  @param  x Placement of building from x axis to the left
+     *  @param  y Placement of building from y axis down
      */
     public Building(int x, int y)
     {
@@ -23,7 +25,7 @@ public class Building
     }
     /**
      * This method uses the Graphics2D g2 class to create and draw a building.
-     * @param    y    description of parameter y
+     * @param    g2    uses the g2 class to create and draw a building.
      * @return    void
      */
     public void draw(Graphics2D g2)

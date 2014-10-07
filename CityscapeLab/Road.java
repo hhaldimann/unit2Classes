@@ -16,6 +16,8 @@ public class Road
     private int yTop;
     /**
      * Default constructor for objects of class Road
+     * @param x Placement of road from x axis to the left
+     * @param y Placement of road from y axis down
      */
     public Road(int x, int y)
     {
@@ -26,7 +28,7 @@ public class Road
     /**
      * This method uses the Graphics2D g2 class to create and draw a road with yellow dashes running
      * through the middle of it.
-     * @param    y    description of parameter y
+     * @param    g2  uses g2 class to create and draw a road
      * @return   void
      */
     public void draw(Graphics2D g2)

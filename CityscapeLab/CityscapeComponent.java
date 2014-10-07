@@ -1,19 +1,18 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
-
 /**
  * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
  *  cityscape to these object.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author @hhaldimann
+ * @version 7 October 2014
  */
 public class CityscapeComponent extends JComponent
 {
     /**
      * This method instantiates the objects and creates multiple buildings, a road and a sun. It then draws the objects.
-     * @param    y    description of parameter y
+     * @param    g    g class creates instances of classes composed of methods to create a city.
      */
     public void paintComponent(Graphics g)
     {
@@ -33,8 +32,6 @@ public class CityscapeComponent extends JComponent
         
         mainRoad.draw(g2);
         sun.draw(g2);
-        tree.draw(g2);
-        
+        tree.draw(g2);     
     }
-
 }

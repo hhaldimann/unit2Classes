@@ -16,6 +16,8 @@ public class Tree
     private int yTop;
     /**
      * Default constructor for objects of class Tree
+     * @param x Placement of building from y axis down
+     * @param y Placement of building from y axis down
      */
     public Tree(int x, int y)
     {
@@ -24,7 +26,7 @@ public class Tree
     }
     /**
      * This method uses the Graphics2D g2 class to create and draw a tree.
-     * @param    y    description of parameter y
+     * @param    g2   uses the Graphics2D g2 class to create and draw a tree.
      * @return    void
      */
     public void draw(Graphics2D g2)
